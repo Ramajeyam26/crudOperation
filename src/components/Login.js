@@ -43,7 +43,7 @@ export default function Login() {
       <form onSubmit={Login}>
         <div className="form-container">
           <div className="row">
-            <div className="col-1">Email :</div>
+            <div className="col-1">Email:</div>
             <div className="col-2">
               <input
                 className="input-box"
@@ -56,7 +56,7 @@ export default function Login() {
             </div>
           </div>
           <div className="row">
-            <div className="col-1">Password :</div>
+            <div className="col-1">Password:</div>
             <div className="col-2">
               <input
                 className="input-box"

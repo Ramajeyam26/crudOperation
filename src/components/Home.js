@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <div className="home-header">
-        <h1>Welcome to CRUD operations App</h1>
+        <h1 >Welcome to CRUD operations App</h1>
       </div>
       <div className="home-links">
         <NavLink to="registration" className='home-link-one'>Registration</NavLink>

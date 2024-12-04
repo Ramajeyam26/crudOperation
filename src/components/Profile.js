@@ -83,33 +83,31 @@ export default function Profile() {
       </div>
       <div className="profile-container">
         <div className="profile-cont">
-          <FaUser /> : {name ? name: "Jhon"}
+          <pre><FaUser /> : {name ? name: "Jhon"}</pre>
         </div>
         <div className="profile-cont">
-          <LuActivity /> : {age?age:"21"}
+          <pre><LuActivity /> : {age?age:"21"}</pre>
         </div>
         <div className="profile-cont">
-          <MdEmail /> : {email ? email:"jhon@gmail.com"}
+          <pre><MdEmail /> : {email ? email:"jhon@gmail.com"}</pre>
         </div>
         <div className="profile-cont">
-          <RiLockPasswordFill /> : {password ? password: "123"}
+          <pre><RiLockPasswordFill /> : {password ? password: "123"}</pre>
         </div>
         <div className="profile-cont">
-          <FaLocationDot /> : {place ? place : "abc"}
+          <pre><FaLocationDot /> : {place ? place : "abc"}</pre>
         </div>
         <div className="profile-cont">
-          <FaPhoneAlt /> : {mobileNumber ? mobileNumber: "1234567890"}
+          <pre><FaPhoneAlt /> : {mobileNumber ? mobileNumber:"1234567890"}</pre>
         </div>
       </div>
       <div className="profile-option">
         <div className="">
-          {" "}
           <button
             className="profile-option-icon"
             type="button"
             onClick={() => {
               navigate(`/editprofile/${id}`);
-              // alert(id)
             }}
           >
             <div>

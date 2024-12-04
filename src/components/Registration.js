@@ -74,7 +74,7 @@ export default function Registration() {
       <form onSubmit={Register}>
         <div className="form-container">
           <div className="row">
-            <div className="col-1">Name :</div>
+            <div className="col-1">Name:</div>
             <div className="col-2">
               <input
                 className="input-box"
@@ -87,7 +87,7 @@ export default function Registration() {
             </div>
           </div>
           <div className="row">
-            <div className="col-1">Age :</div>
+            <div className="col-1">Age:</div>
             <div className="col-2">
               <input
                 className="input-box"
@@ -99,7 +99,7 @@ export default function Registration() {
             </div>
           </div>
           <div className="row">
-            <div className="col-1">Email :</div>
+            <div className="col-1">Email:</div>
             <div className="col-2">
               <input
                 className="input-box"
@@ -112,7 +112,7 @@ export default function Registration() {
             </div>
           </div>
           <div className="row">
-            <div className="col-1">Password :</div>
+            <div className="col-1">Password:</div>
             <div className="col-2">
               <input
                 className="input-box"
@@ -121,13 +121,11 @@ export default function Registration() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                pattern="^\d{10}$"
-                title="enter only 10 digits"
               />
             </div>
           </div>
           <div className="row">
-            <div className="col-1">Place :</div>
+            <div className="col-1">Place:</div>
             <div className="col-2">
               <input
                 className="input-box"
@@ -139,7 +137,7 @@ export default function Registration() {
             </div>
           </div>
           <div className="row">
-            <div className="col-1">Mobile Number :</div>
+            <div className="col-1">MobileNumber:</div>
             <div className="col-2">
               <input
                 className="input-box"
@@ -149,6 +147,8 @@ export default function Registration() {
                 onChange={(e) => {
                   setMobileNumber(e.target.value);
                 }}
+                // pattern="^\d{10}$"
+                title="enter only 10 digits"
               />
             </div>
           </div>
@@ -158,8 +158,11 @@ export default function Registration() {
         </div>
       </form>
       <div className="back-arrow">
-        <button onClick={() => window.history.back()} className="profile-option-icon">
-          <BiArrowBack className="delete-icon"/>
+        <button
+          onClick={() => window.history.back()}
+          className="profile-option-icon"
+        >
+          <BiArrowBack className="delete-icon" />
           Back
         </button>
       </div>
